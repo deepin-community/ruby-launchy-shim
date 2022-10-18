@@ -1,0 +1,13 @@
+ruby-launchy-shim (2.3.0.1) unstable; urgency=medium
+
+  * improve package description
+  * launchy.gemspec: read version from debian/changelog
+  * add `Suggests: xdg-open`, and output a warning if it's not installed.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 21 Oct 2015 14:35:50 -0200
+
+ruby-launchy-shim (2.3.0) unstable; urgency=medium
+
+  * Initial release (Closes: #623914)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 20 Oct 2015 19:53:33 -0200

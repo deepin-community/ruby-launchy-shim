@@ -1,0 +1,26 @@
+Source: ruby-launchy-shim
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-launchy-shim.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-launchy-shim.git
+Homepage: http://packages.debian.org/ruby-launchy-shim
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-launchy-shim
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Suggests: xdg-utils
+Description: helper class for launching a web browser
+ Launchy is a helper class for launching a web browser in a fire and forget
+ manner from Ruby programs. This is a minimal shim that replaces the original
+ Launchy on Debian, without all the code to support non-Debian systems.
